@@ -1547,6 +1547,7 @@ a {
 }
 
 .benefits {
+  margin-top: 100px;
   color: #fff;
   background-repeat: no-repeat;
   background-position: center;
