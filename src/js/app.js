@@ -9,6 +9,13 @@ $(document).ready(function() {
 		dotsClass: 'slider__dots',
 		dots: true,
 		fade: true,
-		adaptiveHeight: true
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					adaptiveHeight: true
+				}
+			}
+		]
 	});
 });
