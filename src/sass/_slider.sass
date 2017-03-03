@@ -1,0 +1,336 @@
+.team
+	position: relative
+	z-index: 12
+	background: $black
+	+lg
+		background: #181818
+	&__members
+		margin: 0 -58px
+		+lg
+			margin: 0
+
+.slider
+	float: left
+	width: 100%
+	+lg
+		margin-top: -17px
+	&__arrow
+		position: absolute
+		top: 314px
+		width: 40px
+		height: 40px
+		background-color: $yellow
+		background-repeat: no-repeat
+		background-size: auto 29px
+		+lg
+			top: 192px
+			width: 83px
+			height: 83px
+			background-size: auto 60px
+		+sm
+			top: 150px
+			width: 40px
+			height: 40px
+			background-size: auto 29px
+	&__prev
+		left: -80px
+		background-image: url(../img/prev.svg)
+		background-position: 10px center
+		+r(1260)
+			left: -40px
+		+lg
+			left: -75px
+			background-position: 20px center
+		+sm
+			left: 0px
+			background-position: 10px center
+	&__next
+		right: -80px
+		background-image: url(../img/next.svg)
+		background-position: 12px center
+		+r(1260)
+			right: -40px
+		+lg
+			right: -75px
+			background-position: 27px center
+		+sm
+			right: 0px
+			background-position: 12px center
+	&__dots
+		position: absolute
+		top: 574px
+		left: 0
+		width: 38%
+		text-align: center
+		+lg
+			display: none
+			visibility: hidden
+		li
+			display: inline-block
+			vertical-align: top
+			padding: 0 9px
+			&.slick-active
+				button
+					background: $white
+		button
+			display: inline-block
+			vertical-align: top
+			border: 1px solid $white
+			width: 10px
+			height: 10px
+			background: none
+			font-size: 0
+
+.slide
+	padding: 25px 0 100px
+	+clr
+	+lg
+		padding: 0 0 73px
+	+sm
+		padding-bottom: 40px
+	&__figure
+		float: left
+		width: 38%
+		height: 500px
+		+vertical
+		+lg
+			width: 100%
+			height: 375px
+		+sm
+			float: none
+			margin: 0 auto
+			width: 60%
+			height: 260px
+		img
+			display: inline-block
+			vertical-align: bottom
+			max-width: 100%
+			max-height: 100%
+	&__content
+		float: left
+		padding: 0 0 0 60px
+		width: 62%
+		color: $white
+		+lg
+			width: 100%
+			padding: 0
+	&__user
+		margin-bottom: 10px
+		+f('light', 47, 47)
+		+lg
+			margin-top: 35px
+			+f(null, 70)
+			text-align: center
+		+sm
+			margin-top: 20px
+			+f(null, 32)
+		em
+			color: $yellow
+			+f('med')
+	&__meta
+		margin-bottom: 40px
+		+f('light', 19, 20)
+		+lg
+			margin: 0 auto 100px
+			max-width: 420px
+			text-align: center
+			+f(null, 35, 37)
+		+sm
+			+f(null, 20)
+			margin-bottom: 50px
+			padding: 0 40px
+		br
+			+lg
+				display: none
+	&__title
+		position: relative
+		+f('light', 34, 32)
+		+lg
+			padding-left: 35px
+		+sm
+			padding: 0 40px
+		div
+			margin-bottom: 80px
+		small
+			display: block
+			margin-bottom: 30px
+			+f(null, 20, 22)
+		div, small
+			position: relative
+			z-index: 1
+			+lg
+				background: #181818
+			+sm
+				+f(null, 18, 22)
+		.icon
+			position: absolute
+			bottom: 100%
+			right: 100%
+			margin: 0 8px -3px 0
+			font-size: 26px
+			+lg
+				font-size: 82px
+				transform: translate3d(110%,40%,0) rotate(180deg)
+			+sm
+				font-size: 26px
+				margin: 0
+	&__title, &__title small
+		+lg
+			+f(null, 31, 35)
+	&__label
+		margin-bottom: 11px
+		+f('med', 51, 51)
+		+lg
+			margin-bottom: 16px
+			+f(null, 75)
+		+sm
+			+f(null, 36)
+		&_yellow
+			color: $yellow
+			+lg
+				color: $black
+		&_white
+			color: $white
+			+lg
+				color: $black
+	&__list
+		li
+			position: relative
+			margin-bottom: 6px
+			+f('light', 20, 22)
+			+lg
+				margin-bottom: 10px
+				+f(null, 30, 32)
+			+sm
+				+f(18, 22)
+			&:before
+				content: ""
+				position: absolute
+				top: 8px
+				right: 100%
+				margin-right: 13px
+				width: 8px
+				height: 8px
+				background: $white
+				+lg
+					background: $black
+			em
+				+f('med')
+		strong
+			display: block
+			margin-bottom: 2px
+			+f(null, 34, 26)
+			+lg
+				+f(null, 48, 30)
+		&_yellow
+			color: $yellow
+			+lg
+				color: $black
+			li
+				&:before
+					background: $yellow
+					+lg
+						background: $black
+	&__box
+		position: relative
+		+clr
+	&__before
+		float: left
+		padding-right: 80px
+		width: 250px
+		+lg
+			margin-bottom: 20px
+		&_lg
+			width: 290px
+			padding-right: 15px
+	&__after
+		float: left
+		width: 360px
+		&_small
+			width: 210px
+		&_md
+			padding-left: 60px
+			width: 320px
+	&__before,
+	&__after
+		+lg
+			position: relative
+			z-index: 2
+			padding: 0
+			width: 100%
+			color: $black
+	&__bg
+		position: relative
+		+clr
+		+lg
+			padding-bottom: 40px
+		&-in
+			+clr
+			+lg
+				padding: 53px 50px 30px 63px
+				background: $yellow
+			+sm
+				padding: 40px
+	&__footer
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		padding: 0 15px
+		height: 42px
+		font-size: 0
+		display: none
+		+lg
+			display: block
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			background: $yellow
+			transform: skewY(-2deg)
+			transform-origin: left bottom
+		i
+			position: relative
+			z-index: 1
+			display: inline-block
+			vertical-align: top
+			margin: 25px 10px 0 0
+			border-radius: 50%
+			width: 20px
+			height: 20px
+			background: #181818
+	&__decor
+		position: absolute
+		top: 0
+		left: 200px
+		bottom: 8px
+		border-right: 4px solid $yellow
+		+lg
+			position: static
+			padding-left: 35px
+			margin-bottom: 60px
+			border: none
+		+sm
+			margin-bottom: 35px
+		&_center
+			left: 290px
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			top: 86px
+			left: 0
+			+lg
+				display: none
+		&:after
+			margin-top: 7px
+			+arr(11,33,$black,r)
+		&:before
+			+arr(16,47,$yellow,r)
+		.decor
+			display: none
+			+lg
+				display: block

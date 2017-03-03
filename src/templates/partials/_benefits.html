@@ -1,0 +1,42 @@
+<!-- begin benefits  -->
+<div class="benefits" style="background-image: url(img/benefits.jpg);">
+	<div class="benifits__inner">
+		<div class="inner">
+			<div class="benefits__title">
+				<em>Benefits of Adopting</em>
+				<span>an Organizational Structure Chart</span>
+			</div>
+			{% set benefits = [
+				{
+					icon: 'connect',
+					text: 'The work of one who is responsible “for everything” can be broken down into individual jobs (points of responsibility) and assigned to employees wishing to grow and take on more responsibility.'
+				},
+				{
+					icon: 'communication',
+					text: 'The company stops depending on “star employees” and the business is prepared to replace any individual at a moment’s notice, but no one wants to leave because they see the opportunities and advancements that await them!'
+				},
+				{
+					icon: 'target',
+					text: 'The Organizational Structure Chart shows employees who to contact and on what issues.'
+				},
+				{
+					icon: 'time',
+					text: 'All business procedures accelerate by 2-3X'
+				},
+				{
+					icon: 'schedule',
+					text: 'Owner’s time spent on routine matters is practically eliminated and they can spend that time on management and strategy alone.'
+				}
+			] %}
+			<ul class="benefits__list">
+				{% for item in benefits %}
+					<li class="benefits__item">
+						{{mixins.icon(item.icon)}}
+						<span>{{item.text}}</span>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end benefits -->
