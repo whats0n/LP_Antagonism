@@ -851,6 +851,7 @@ a {
   letter-spacing: -0.064em;
   color: #fff;
   font-size: 434px;
+  line-height: 0.8;
 }
 
 .exhibiting__serial-number span {
@@ -1006,8 +1007,6 @@ a {
 }
 
 .exhibiting__img img {
-  max-width: 100%;
-  max-height: 100%;
   display: block;
 }
 
@@ -1485,6 +1484,8 @@ a {
   .exhibiting__right {
     padding-left: 35px;
     width: 100%;
+    font-size: 40px;
+    text-transform: uppercase;
   }
 
   .exhibiting_yellow .exhibiting__right {
@@ -1506,6 +1507,11 @@ a {
 
   .exhibiting__list:not(:first-child) {
     margin-top: 43px;
+  }
+
+  .exhibiting__img img {
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .exhibiting__img_clock {
@@ -1531,6 +1537,10 @@ a {
   .exhibiting__item:before {
     height: 18px;
     width: 18px;
+  }
+
+  .exhibiting__title-bg {
+    font-size: 34px;
   }
 
   .exhibiting br {
