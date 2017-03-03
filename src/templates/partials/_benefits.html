@@ -1,10 +1,12 @@
 <!-- begin benefits  -->
-<div class="benefits" style="background-image: url(img/benefits.jpg);">
+<div class="benefits">
+	<div class="benefits__bg" style="background-image: url(img/benefits.jpg);"></div>
 	<div class="benifits__inner">
 		<div class="inner">
 			<div class="benefits__title">
-				<em>Benefits of Adopting</em>
+				<em>Benefits of&nbsp;Adopting</em>
 				<span>an Organizational Structure Chart</span>
+				{{mixins.icon('title-arr')}}
 			</div>
 			{% set benefits = [
 				{
@@ -31,8 +33,10 @@
 			<ul class="benefits__list">
 				{% for item in benefits %}
 					<li class="benefits__item">
-						{{mixins.icon(item.icon)}}
-						<span>{{item.text}}</span>
+						<div class="benefits__icon">
+							{{mixins.icon(item.icon)}}
+						</div>
+						<div class="benefits__text">{{item.text}}</div>
 					</li>
 				{% endfor %}
 			</ul>

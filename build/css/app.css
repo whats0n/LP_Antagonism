@@ -128,16 +128,58 @@ html {
   box-sizing: inherit;
 }
 
+.icon-communication {
+  width: 1.67em;
+  height: 1em;
+  fill: #E8BC00;
+}
+
+.icon-connect {
+  width: 1.68em;
+  height: 1em;
+  fill: #E8BC00;
+}
+
+.icon-exclamation {
+  width: 0.95em;
+  height: 1em;
+  fill: #FFF;
+}
+
 .icon-facebook {
   width: 0.53em;
   height: 1em;
   fill: #000;
 }
 
+.icon-question {
+  width: 0.68em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-quotes {
   width: 1.1em;
   height: 1em;
   fill: #F0B800;
+}
+
+.icon-schedule {
+  width: 1.08em;
+  height: 1em;
+  fill: #E8BC00;
+}
+
+.icon-target {
+  width: 1.31em;
+  height: 1em;
+  fill: #E8BC00;
+}
+
+.icon-time {
+  width: 1.08em;
+  height: 1em;
+  fill: #E8BC00;
 }
 
 .icon-title-arr {
@@ -445,6 +487,7 @@ a {
 
 .logo {
   position: absolute;
+  z-index: 20;
   top: 0;
   right: 13px;
   width: 126px;
@@ -457,6 +500,10 @@ a {
 
 .logo img {
   width: 100%;
+}
+
+.logo span {
+  display: none;
 }
 
 .faq {
@@ -477,7 +524,7 @@ a {
 
 .faq__img {
   position: absolute;
-  top: 10px;
+  top: 61px;
   right: -30px;
 }
 
@@ -552,6 +599,14 @@ a {
 
 .faq__icon {
   display: none;
+}
+
+.faq .icon-question {
+  position: absolute;
+  z-index: 2;
+  top: 18px;
+  right: 268px;
+  font-size: 353px;
 }
 
 .lil-info {
@@ -631,14 +686,11 @@ a {
   height: 96px;
 }
 
-.lil-info__exclamation {
+.lil-info .icon-exclamation {
   position: absolute;
   top: 216px;
   right: -41px;
-  background-image: url("../img/sprite.png");
-  width: 182px;
-  height: 192px;
-  background-position: 0px 0px;
+  font-size: 192px;
 }
 
 .lesson__inner {
@@ -954,6 +1006,7 @@ a {
   letter-spacing: -0.064em;
   color: #fff;
   font-size: 434px;
+  line-height: 0.8;
 }
 
 .exhibiting__serial-number span {
@@ -1109,8 +1162,6 @@ a {
 }
 
 .exhibiting__img img {
-  max-width: 100%;
-  max-height: 100%;
   display: block;
 }
 
@@ -1547,8 +1598,18 @@ a {
 }
 
 .benefits {
+  position: relative;
+  padding: 120px 0 110px;
   margin-top: 100px;
   color: #fff;
+}
+
+.benefits__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1564,6 +1625,134 @@ a {
   display: block;
   color: #ebbf00;
   font-family: "PFDinPro Medium", Arial, sans-serif;
+}
+
+.benefits__list {
+  position: relative;
+  margin: 0 -18px;
+  font-size: 0;
+}
+
+.benefits__list:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  background: #000;
+  -webkit-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  display: none;
+}
+
+.benefits__item {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 18px;
+  width: 20%;
+}
+
+.benefits__icon {
+  height: 80px;
+  text-align: center;
+  font-size: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.benefits__icon:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 0;
+  height: 100%;
+}
+
+.benefits__icon .icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.benefits__icon .icon-connect {
+  font-size: 55px;
+}
+
+.benefits__icon .icon-communication {
+  font-size: 55px;
+}
+
+.benefits__icon .icon-target {
+  font-size: 72px;
+}
+
+.benefits__icon .icon-time {
+  font-size: 71px;
+}
+
+.benefits__icon .icon-schedule {
+  font-size: 76px;
+}
+
+.benefits__text {
+  font-family: "PFDinPro Light", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.11;
+}
+
+.benefits .icon-title-arr {
+  display: block;
+  margin: 20px 0 45px;
+  fill: #ebbf00;
+  font-size: 17px;
+}
+
+.show {
+  padding: 120px 0 0;
+}
+
+.show__title {
+  margin-bottom: 20px;
+  max-width: 720px;
+  color: #fff;
+  font-family: "PFDinPro Light", Arial, sans-serif;
+  font-size: 42px;
+  line-height: 1.05;
+}
+
+.show__title em {
+  display: block;
+  color: #ebbf00;
+  font-family: "PFDinPro Medium", Arial, sans-serif;
+}
+
+.show__decor {
+  margin-bottom: 70px;
+}
+
+.results {
+  padding: 40px 0 133px;
+}
+
+.results__title {
+  margin-bottom: 20px;
+  max-width: 720px;
+  color: #fff;
+  font-family: "PFDinPro Light", Arial, sans-serif;
+  font-size: 42px;
+  line-height: 1.05;
+}
+
+.results__title em {
+  display: block;
+  color: #ebbf00;
+  font-family: "PFDinPro Medium", Arial, sans-serif;
+}
+
+.results__decor {
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -1747,6 +1936,10 @@ a {
     max-width: 100%;
   }
 
+  .faq .icon-question {
+    display: none;
+  }
+
   .lil-info__inner {
     max-width: 700px;
   }
@@ -1803,7 +1996,7 @@ a {
     display: none;
   }
 
-  .lil-info__exclamation {
+  .lil-info .icon-exclamation {
     display: none;
   }
 
@@ -1964,6 +2157,8 @@ a {
   .exhibiting__right {
     padding-left: 35px;
     width: 100%;
+    font-size: 40px;
+    text-transform: uppercase;
   }
 
   .exhibiting_yellow .exhibiting__right {
@@ -1985,6 +2180,11 @@ a {
 
   .exhibiting__list:not(:first-child) {
     margin-top: 43px;
+  }
+
+  .exhibiting__img img {
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .exhibiting__img_clock {
@@ -2010,6 +2210,10 @@ a {
   .exhibiting__item:before {
     height: 18px;
     width: 18px;
+  }
+
+  .exhibiting__title-bg {
+    font-size: 34px;
   }
 
   .exhibiting br {
@@ -2188,6 +2392,82 @@ a {
 
   .slide__decor .decor {
     display: block;
+  }
+
+  .benefits {
+    padding: 70px 0 0;
+    margin-top: 80px;
+  }
+
+  .benefits__bg {
+    background-position: 41% -150px;
+    background-size: auto 1300px;
+  }
+
+  .benefits__title {
+    max-width: 370px;
+    font-size: 50px;
+    line-height: 1.04;
+  }
+
+  .benefits__list {
+    padding: 70px 0 95px;
+  }
+
+  .benefits__list:before {
+    display: block;
+  }
+
+  .benefits__item {
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .benefits__icon {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .benefits__icon .icon {
+    font-size: 128px;
+  }
+
+  .benefits__text {
+    font-family: "PFDinPro Light", Arial, sans-serif;
+    font-size: 38px;
+    line-height: 1.08;
+  }
+
+  .benefits .icon-title-arr {
+    font-size: 28px;
+    margin-bottom: 145px;
+  }
+
+  .show {
+    padding: 100px 20px 0;
+  }
+
+  .show__title {
+    margin-bottom: 30px;
+    max-width: 440px;
+    font-size: 50px;
+    line-height: 1.04;
+  }
+
+  .show__decor {
+    margin-bottom: 50px;
+  }
+
+  .results {
+    padding: 90px 20px 67px;
+  }
+
+  .results__title {
+    margin-bottom: 30px;
+    max-width: 440px;
+    font-size: 50px;
+    line-height: 1.04;
   }
 }
 
@@ -2504,6 +2784,53 @@ a {
 
   .slide__decor {
     margin-bottom: 35px;
+  }
+
+  .benefits__bg {
+    background-position: 30% -50px;
+    background-size: auto 500px;
+  }
+
+  .benefits__title {
+    padding: 0 20px;
+    max-width: 320px;
+    font-size: 32px;
+    line-height: 1.13;
+  }
+
+  .benefits__list {
+    padding: 50px 0;
+    margin: 0;
+  }
+
+  .benefits__item {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .benefits__icon .icon {
+    font-size: 72px;
+  }
+
+  .benefits__text {
+    font-size: 18px;
+    line-height: 1.23;
+  }
+
+  .benefits .icon-title-arr {
+    margin-bottom: 80px;
+  }
+
+  .show__title {
+    max-width: 340px;
+    font-size: 32px;
+    line-height: 1.13;
+  }
+
+  .results__title {
+    max-width: 340px;
+    font-size: 32px;
+    line-height: 1.13;
   }
 }
 

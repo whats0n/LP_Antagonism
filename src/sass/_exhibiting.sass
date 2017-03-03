@@ -43,6 +43,7 @@
 		letter-spacing: -0.064em
 		color: $white 
 		font-size: 434px
+		line-height: 0.8
 		span
 			min-width: 350px
 			display: inline-block
@@ -126,6 +127,8 @@
 		+lg
 			padding-left: 35px 
 			width: 100%
+			font-size: 40px
+			text-transform: uppercase
 		.exhibiting_yellow &
 			width: 33.5%
 			color: $black 
@@ -165,9 +168,10 @@
 		margin-left: -91px
 		font-size: 0
 		img
-			max-width: 100%
-			max-height: 100%
 			display: block
+			+lg
+				max-width: 100%
+				max-height: 100%
 		&_clock
 			+lg
 				right: -65px
@@ -211,6 +215,9 @@
 		vertical-align: top
 		display: inline-block
 		background: $yellow 
+		+lg
+
+			font-size: 34px
 		.exhibiting_yellow &
 			padding: 10px 10px 4px
 			background: $black 
