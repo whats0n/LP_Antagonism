@@ -85,6 +85,11 @@ a
 		span
 			+lg
 				color: $yellow
+	&_yellow-bg
+		background: $yellow
+		color: $black
+		&:hover
+			background: darken($yellow, 10%)
 	&_white
 		color: $black
 		background: $white
@@ -105,4 +110,5 @@ a
 				display: block
 				+f('mbold')
 .lg-hide
-	display: none
+	+lg
+		display: none

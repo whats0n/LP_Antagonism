@@ -398,6 +398,15 @@ a {
   font-family: "MyriadPro Bold", Arial, sans-serif;
 }
 
+.btn_yellow-bg {
+  background: #ebbf00;
+  color: #000;
+}
+
+.btn_yellow-bg:hover {
+  background: #b89600;
+}
+
 .btn_white {
   color: #000;
   background: #fff;
@@ -410,10 +419,6 @@ a {
 
 .btn_white em {
   display: inline-block;
-}
-
-.lg-hide {
-  display: none;
 }
 
 .header__inner {
@@ -1846,6 +1851,10 @@ a {
   .btn_white strong {
     display: block;
     font-family: "MyriadPro Bold", Arial, sans-serif;
+  }
+
+  .lg-hide {
+    display: none;
   }
 
   .header__figure {
