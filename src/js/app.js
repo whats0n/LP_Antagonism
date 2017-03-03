@@ -8,6 +8,7 @@ $(document).ready(function() {
 		nextArrow: '<button class="slider__arrow slider__next"></button>',
 		dotsClass: 'slider__dots',
 		dots: true,
-		fade: true
+		fade: true,
+		adaptiveHeight: true
 	});
 });
