@@ -995,13 +995,13 @@ a {
   margin: 0 auto;
   padding: 58px 66px 56px 104px;
   max-width: 980px;
-  overflow: hidden;
 }
 
 .exhibiting_yellow .exhibiting__wrap {
   padding-top: 72px;
   padding-bottom: 42px;
   color: #000;
+  overflow: hidden;
 }
 
 .exhibiting_yellow .exhibiting__wrap:before {
@@ -1022,7 +1022,7 @@ a {
 
 .exhibiting__serial-number {
   position: absolute;
-  top: 207px;
+  top: 182px;
   left: 0;
   right: 0;
   padding-left: 28%;
@@ -2254,8 +2254,8 @@ a {
 
   .exhibiting__img_hourglass {
     margin: 0;
-    right: -207px;
-    bottom: 179px;
+    right: -218px;
+    bottom: 170px;
     width: 468px;
     -webkit-transform: rotate(36deg);
     -ms-transform: rotate(36deg);

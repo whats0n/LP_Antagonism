@@ -1,12 +1,12 @@
 .exhibiting
 	color: $white
 	+lg
-		font-size: 40px 
-	&_yellow 
+		font-size: 40px
+	&_yellow
 		position: relative
 		z-index: 11
 	&_padTop
-		margin-top: -56px 
+		margin-top: -56px
 		+lg
 			.exhibiting__bottom
 				display: none
@@ -20,22 +20,22 @@
 		margin: 0 auto
 		padding: 58px 66px 56px 104px
 		max-width: 980px
-		overflow: hidden
 		+lg
-			padding: 40px 57px 200px 80px 
+			padding: 40px 57px 200px 80px
 		+sm
 			padding: 40px 20px 200px
 		.exhibiting_yellow &
-			padding-top: 72px 
+			padding-top: 72px
 			padding-bottom: 42px
-			color: $black 
+			color: $black
+			overflow: hidden
 			+lg
-				padding: 60px 57px 32px 55px 
+				padding: 60px 57px 32px 55px
 			+sm
 				padding: 60px 20px
 			&:before
 				position: absolute
-				content: "" 
+				content: ""
 				top: 0
 				left: 0
 				right: 0
@@ -47,18 +47,18 @@
 			overflow: visible
 			+lg
 				padding-top: 10px
-				padding-bottom: 48px 
+				padding-bottom: 48px
 			+sm
 				padding-top: 30px
 				padding-bottom: 40px
 	&__serial-number
 		position: absolute
-		top: 207px
+		top: 182px
 		left: 0
 		right: 0
 		padding-left: 28%
 		letter-spacing: -0.064em
-		color: $white 
+		color: $white
 		+lg
 			display: none
 		span
@@ -81,7 +81,7 @@
 			right: 0
 			top: 0
 			bottom: 0
-			background: $yellow 
+			background: $yellow
 			transform: skewY(2deg)
 			transform-origin: right bottom
 		i
@@ -93,7 +93,7 @@
 			border-radius: 50%
 			width: 20px
 			height: 20px
-			background: $yellow 
+			background: $yellow
 	&__bottom
 		position: absolute
 		bottom: 0
@@ -144,32 +144,32 @@
 		float: right
 		font-size: 35px
 		width: 42.5%
-		color: $yellow 
+		color: $yellow
 		+lg
-			padding-left: 35px 
+			padding-left: 35px
 			width: 100%
 			font-size: 40px
 			text-transform: uppercase
 		+sm
-			padding-left: 20px 
+			padding-left: 20px
 			font-size: 20px
 		.exhibiting_yellow &
 			width: 33.5%
-			color: $black 
+			color: $black
 			+lg
 				width: 100%
 	&__title
 		position: relative
 		padding: 0 0 35px 0
 		+f('light', 42)
-		line-height: 1.05 
+		line-height: 1.05
 		+lg
 			padding-bottom: 40px
 			font-size: 53px
 		+sm
-			font-size: 33px 
+			font-size: 33px
 		.exhibiting_yellow &
-			padding-right: 30px 
+			padding-right: 30px
 			+lg
 				padding-right: 0
 			.icon
@@ -225,8 +225,8 @@
 			margin: -132px 0 -161px 45px
 			+lg
 				margin: 0
-				right: -207px
-				bottom: 179px
+				right: -218px
+				bottom: 170px
 				width: 468px
 				transform: rotate(36deg)
 				img
@@ -246,11 +246,11 @@
 			letter-spacing: -0.012em
 		+sm
 			padding-left: 17px
-			font-size: 20px 
+			font-size: 20px
 		&:not(:first-child)
 			margin-top: 20px
 			+lg
-				margin-top: 20px 
+				margin-top: 20px
 		&:before
 			position: absolute
 			content: ''
@@ -258,7 +258,7 @@
 			top: 7px
 			width: 9px
 			height: 9px
-			background: $yellow 
+			background: $yellow
 			+lg
 				height: 18px
 				width: 18px
@@ -275,7 +275,7 @@
 		color: $black
 		vertical-align: top
 		display: inline-block
-		background: $yellow 
+		background: $yellow
 		+lg
 			margin-top: 60px
 			margin-bottom: 20px
@@ -286,8 +286,8 @@
 			font-size: 17px
 		.exhibiting_yellow &
 			padding: 10px 10px 4px
-			color: $white 
-			background: $black 
+			color: $white
+			background: $black
 	&__title-sm
 		+f('light', 60)
 		+lg
@@ -298,7 +298,7 @@
 			font-size: 20px
 	&__title-md
 		+f('light', 80)
-		color: $white 
+		color: $white
 		letter-spacing: -0.017em
 		.exhibiting_yellow &
 			color: $black
