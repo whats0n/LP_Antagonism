@@ -1,0 +1,230 @@
+.exhibiting
+	color: $white
+	+lg
+		font-size: 40px 
+	&_yellow 
+		position: relative
+		z-index: 11
+		overflow: hidden
+	&_padTop
+		margin-top: -56px 
+	&__wrap
+		position: relative
+		z-index: 10
+		margin: 0 auto
+		padding: 58px 66px 56px 104px
+		max-width: 980px
+		+lg
+			padding: 60px 57px 53px 80px 
+		.exhibiting_yellow &
+			padding-top: 72px 
+			padding-bottom: 42px
+			color: $black 
+			+lg
+				padding: 60px 57px 53px 55px 
+			&:before
+				position: absolute
+				content: "" 
+				top: 0
+				left: 0
+				right: 0
+				bottom: 42px
+				z-index: -1
+				background-color: $yellow
+		.exhibiting_padTop &
+			padding-top: 86px
+	&__serial-number
+		position: absolute
+		top: 160px
+		left: 0
+		right: 0
+		padding-left: 26%
+		opacity: 0.3
+		letter-spacing: -0.064em
+		color: $white 
+		font-size: 434px
+		span
+			min-width: 350px
+			display: inline-block
+	&__top
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		height: 42px
+		font-size: 0
+		text-align: right
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			background: $black
+			transform: skewY(2deg)
+			transform-origin: right bottom
+		i
+			position: relative
+			z-index: 1
+			display: inline-block
+			vertical-align: top
+			margin: 25px 10px 0 0
+			border-radius: 50%
+			width: 20px
+			height: 20px
+			background: $yellow 
+	&__bottom
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		padding: 0 15px
+		height: 42px
+		font-size: 0
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			bottom: 0
+			background: $yellow
+			transform: skewY(-2deg)
+			transform-origin: left bottom
+		i
+			position: relative
+			z-index: 1
+			display: inline-block
+			vertical-align: top
+			margin: 25px 10px 0 0
+			border-radius: 50%
+			width: 20px
+			height: 20px
+			background: $black
+	&__inner
+		padding-bottom: 45px
+		+clr
+		+lg
+			position: static
+	&__left
+		float: left
+		padding-right: 75px
+		width: 57.5%
+		+lg
+			padding-right: 0
+			width: 100%
+		.exhibiting_yellow &
+			width: 66.5%
+			+lg
+				width: 100%
+	&__right
+		float: right
+		font-size: 35px
+		width: 42.5%
+		color: $yellow 
+		+lg
+			padding-left: 35px 
+			width: 100%
+		.exhibiting_yellow &
+			width: 33.5%
+			color: $black 
+			+lg
+				width: 100%
+	&__title
+		position: relative
+		padding: 0 0 35px 0
+		+f('light', 42)
+		line-height: 1.05 
+		+lg
+			padding-bottom: 40px
+			font-size: 53px
+		.exhibiting_yellow &
+			padding-right: 30px 
+			+lg
+				padding-right: 0
+			.icon
+				fill: $black
+		.icon
+			position: absolute
+			left: 0
+			bottom: 0
+			fill: $yellow
+			font-size: 17px
+			+lg
+				font-size: 28px
+			.exhibiting_yellow &
+				color: $black
+	&__list
+		&:not(:first-child)
+			margin-top: 55px
+			+lg
+				margin-top: 43px
+	&__img
+		margin-top: -117px
+		margin-left: -91px
+		font-size: 0
+		img
+			max-width: 100%
+			max-height: 100%
+			display: block
+		&_clock
+			+lg
+				right: -65px
+				bottom: 64px
+				height: 259px
+		&_calculator
+			margin: -185px 0 0 -60px
+		&_hourglass
+			margin: -132px 0 -161px 45px
+		+lg
+			position: absolute
+			margin: 0
+	&__item
+		position: relative
+		padding-left: 17px
+		+lg
+			padding-left: 35px
+			letter-spacing: -0.01em
+		&:not(:first-child)
+			margin-top: 20px
+			+lg
+				margin-top: 20px 
+		&:before
+			position: absolute
+			content: ''
+			left: 0
+			top: 7px
+			width: 9px
+			height: 9px
+			background: $yellow 
+			+lg
+				height: 18px
+				width: 18px
+			.exhibiting_yellow &
+				background: $black
+	&__title-bg
+		margin: 32px 0 13px
+		padding: 5px 10px 0
+		+f('light', 25)
+		color: $white 
+		vertical-align: top
+		display: inline-block
+		background: $yellow 
+		.exhibiting_yellow &
+			padding: 10px 10px 4px
+			background: $black 
+	&__title-sm
+		+f('light', 60)
+	&__title-md
+		+f('light', 80)
+		color: $white 
+		letter-spacing: -0.017em
+		.exhibiting_yellow &
+			color: $black
+	br
+		+lg
+			display: none
+	.btn
+		&:not(:first-child)
+			margin-top: 40px
