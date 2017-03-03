@@ -1,0 +1,44 @@
+<!-- begin faq  -->
+<div class="faq">
+	<div class="faq__inner">
+		<div class="faq__bg">
+			<div class="inner">
+				<div class="faq__img">
+					<img src="img/faq.png" alt="">
+				</div>
+				<div class="faq__content">
+					<ul class="faq__list">
+						{% set faqList = [
+							'Has your business hit a&nbsp;ceiling&nbsp;because of problems with&nbsp;employees?',
+							'Do you depend on key employees&nbsp;who are difficult to&nbsp;control?',
+							'Do problems with personnel hinder company growth despite favorable market conditions?'
+						] %}
+						{% for item in faqList %}
+							<li class="faq__item">
+								<div class="faq__number">0{{loop.index}}</div>
+								<div class="faq__text">{{item | safe}}</div>
+							</li>
+						{% endfor %}
+					</ul>
+					<div class="faq__footer">
+						<img src="img/faq-mobile.png" alt="" class="faq__icon">
+						<a href="#" class="btn btn_yellow">Register for this <span>FREE webinar</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="faq__bottom">
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+		</div>
+	</div>
+</div>
+<!-- end faq -->

@@ -40,7 +40,9 @@
 +font('PFDinPro Bold', pfdintextpro-bold)
 +font('PFDinPro Light', pfdintextpro-light)
 +font('PFDinPro Thin', pfsquaresanspro-thin)
++font('PFDinPro Regular', pfdintextpro-regular)
 +font('PFDinPro Medium', pfdintextpro-medium)
++font('MyriadPro Regular', MyriadPro-Regular)
 +font('MyriadPro Bold', MyriadPro-Bold)
 
 =f($name: null, $size: null, $line-height: null, $spacing: null)
@@ -49,10 +51,14 @@
     $font-family: 'PFDinPro Thin', Arial, sans-serif
   @if $name == 'light'
     $font-family: 'PFDinPro Light', Arial, sans-serif
+  @if $name == 'reg'
+    $font-family: 'PFDinPro Regular', Arial, sans-serif
   @if $name == 'med'
     $font-family: 'PFDinPro Medium', Arial, sans-serif
   @if $name == 'bold'
     $font-family: 'PFDinPro Bold', Arial, sans-serif
+  @if $name == 'mreg'
+    $font-family: 'MyriadPro Regular', Arial, sans-serif
   @if $name == 'mbold'
     $font-family: 'MyriadPro Bold', Arial, sans-serif
   @if $name != null

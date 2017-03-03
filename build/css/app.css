@@ -20,8 +20,22 @@
 }
 
 @font-face {
+  font-family: "PFDinPro Regular";
+  src: url("../fonts/pfdintextpro-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "PFDinPro Medium";
   src: url("../fonts/pfdintextpro-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyriadPro Regular";
+  src: url("../fonts/MyriadPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -153,6 +167,23 @@ h1, h2, h3, h4, h5, h6, strong, b, cite, th, i, em {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 7px 20px 2px;
+  color: #fff;
+  background: #000;
+  font-family: "MyriadPro Regular", Arial, sans-serif;
+  font-size: 23px;
+  line-height: 1.74;
+  text-align: center;
+  transition: background 0.25s linear;
+}
+
+.btn:hover {
+  background: #333333;
 }
 
 .header__inner {
@@ -289,16 +320,120 @@ a {
   width: 100%;
 }
 
-.block {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+.faq {
+  padding: 75px 0 0;
+}
+
+.faq__inner {
+  position: relative;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.faq__bg {
+  min-height: 660px;
+  background: #ebbf00;
+}
+
+.faq__img {
+  position: absolute;
+  top: 10px;
+  right: -30px;
+}
+
+.faq__content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0 0 140px;
+  color: #000;
+}
+
+.faq__list {
+  padding-bottom: 40px;
+  max-width: 380px;
+}
+
+.faq__text {
+  font-family: "PFDinPro Regular", Arial, sans-serif;
+  font-size: 29px;
+  line-height: 1.11;
+}
+
+.faq__number {
+  float: left;
+  margin-left: -80px;
+  width: 80px;
+  font-family: "PFDinPro Light", Arial, sans-serif;
+  font-size: 70px;
+  line-height: 0.89;
+}
+
+.faq__item {
+  padding: 29px 0;
+}
+
+.faq__bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 15px;
+  height: 42px;
+  font-size: 0;
+}
+
+.faq__bottom:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ebbf00;
+  -webkit-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -webkit-transform-origin: left bottom;
+  -ms-transform-origin: left bottom;
+  transform-origin: left bottom;
+}
+
+.faq__bottom i {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  vertical-align: top;
+  margin: 25px 10px 0 0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background: #000;
+}
+
+.faq__icon {
+  display: none;
 }
 
 @media only screen and (max-width: 1200px) {
 
   .inner {
     max-width: 700px;
+  }
+
+  .btn {
+    padding: 19px 20px 13px;
+    width: 100%;
+    font-size: 48px;
+    line-height: 1.25;
+  }
+
+  .btn_yellow span {
+    color: #ebbf00;
+  }
+
+  .btn span {
+    display: block;
   }
 
   .header__figure {
@@ -379,6 +514,54 @@ a {
   .logo {
     width: 160px;
   }
+
+  .faq {
+    padding-top: 60px;
+  }
+
+  .faq__inner {
+    max-width: 100%;
+  }
+
+  .faq__bg {
+    padding-bottom: 40px;
+    min-height: 1px;
+  }
+
+  .faq__img {
+    display: none;
+  }
+
+  .faq__content {
+    padding-left: 0;
+  }
+
+  .faq__list {
+    padding: 0 0 0 140px;
+    max-width: 520px;
+  }
+
+  .faq__text {
+    font-size: 29px;
+    line-height: 1.21;
+  }
+
+  .faq__number {
+    margin-left: -140px;
+    width: 140px;
+    font-size: 129px;
+    line-height: 0.78;
+  }
+
+  .faq__item {
+    padding: 21px 0;
+  }
+
+  .faq__icon {
+    display: block;
+    margin: 0 auto 15px;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -389,6 +572,13 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .btn {
+    padding: 19px 30px 13px;
+    width: auto;
+    font-size: 24px;
+    line-height: 1.25;
+  }
 
   .header__figure {
     display: none;
@@ -434,6 +624,47 @@ a {
   .logo {
     right: 20px;
     width: 100px;
+  }
+
+  .faq__bg {
+    padding: 0 20px 20px;
+  }
+
+  .faq__content {
+    padding-top: 20px;
+  }
+
+  .faq__list {
+    padding-left: 80px;
+    max-width: 380px;
+  }
+
+  .faq__text {
+    font-size: 23px;
+    line-height: 1;
+  }
+
+  .faq__number {
+    font-size: 70px;
+    line-height: 0.8;
+    margin-left: -80px;
+    width: 80px;
+  }
+
+  .faq__icon {
+    max-width: 241px;
+  }
+
+  .faq__footer {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+
+  .faq__text {
+    font-size: 16px;
+    line-height: 1.13;
   }
 }
 

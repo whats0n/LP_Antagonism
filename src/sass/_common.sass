@@ -30,3 +30,30 @@ h1, h2, h3, h4, h5, h6, strong, b, cite, th, i, em
 a
 	color: inherit
 	text-decoration: none
+
+.btn
+	display: inline-block
+	vertical-align: top
+	padding: 7px 20px 2px
+	color: $white
+	background: $black
+	+f('mreg', 23, 40)
+	text-align: center
+	transition: background 0.25s linear
+	&:hover
+		background: lighten($black, 20%)
+	+lg
+		padding: 19px 20px 13px
+		width: 100%
+		+f(null, 48, 60)
+	+sm
+		padding: 19px 30px 13px
+		width: auto
+		+f(null, 24, 30)
+	&_yellow
+		span
+			+lg
+				color: $yellow
+	span
+		+lg
+			display: block
