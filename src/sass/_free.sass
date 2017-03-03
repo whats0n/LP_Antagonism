@@ -1,0 +1,197 @@
+.free
+	position: relative
+	padding: 200px 0 190px
+	margin: -150px 0 -140px
+	min-height: 981px
+	background-repeat: no-repeat
+	background-position: right top
+	background-size: cover
+	+lg
+		padding: 100px 0 0
+		margin: -50px 0 0
+		background-position: 76% -32%
+		background-size: 1300px auto
+	+sm
+		background-position: 76% -3%
+		background-size: 800px auto
+	p
+		margin-bottom: 21px
+		+f('light', 20, 21)
+		+lg
+			margin-bottom: 39px
+			+f(null, 35, 37)
+		+sm
+			margin-bottom: 24px
+			+f(null, 20, 22)
+		span
+			color: $yellow
+	&__bg
+		position: absolute
+		top: 0
+		right: 0
+		left: 0
+		bottom: 0
+		padding: 200px 0 190px
+		mix-blend-mode: multiply
+	&__inner
+		@extend .inner
+		height: 100%
+	&__box
+		position: relative
+		float: left
+		padding: 32px
+		width: 39%
+		color: $white
+		+lg
+			padding: 60px 0 75px
+			width: 100%
+		+sm
+			padding: 60px 20px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 50%
+			width: 100vw
+			transform: translate3d(-50%,0,0)
+			background: $black
+			display: none
+			+lg
+				display: block
+		&-bg
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			width: 39%
+			background: rgba($black, 0.85)
+			+lg
+				display: none
+			&:before
+				content: ""
+				position: absolute
+				top: 187px
+				right: 0
+				+arr(16,32,$white,l)
+	&__info
+		position: relative
+		z-index: 10
+	&__btn
+		padding-top: 10px
+		+sm
+			text-align: center
+		.btn
+			width: 100%
+			+sm
+				width: auto
+	&__content
+		position: relative
+		z-index: 1
+		float: right
+		margin-top: 84px
+		width: 61%
+		+lg
+			margin-top: 0
+			width: 100%
+		+sm
+			padding: 0 20px
+	&__title
+		margin: -5px 0 0 30px
+		max-width: 260px
+		min-height: 240px
+		+f('med', 39, 39)
+		+lg
+			margin: 0 0 190px
+			max-width: 300px
+			+f(null, 37, 38)
+		+sm
+			+f(null, 24, 26)
+			margin: 100px 0 90px
+		strong
+			+f(null, 71, 67)
+			+lg
+				+f(null, 56, 55)
+				text-transform: uppercase
+			+sm
+				+f(null, 27, 27)
+			em
+				+lg
+					margin-left: -5px
+					+f(null, 104, 61)
+				+sm
+					margin: 0
+					+f(null, 50, 50)
+		span
+			+f(null, 27, 28)
+			+lg
+				display: block
+				margin-top: 20px
+				+f('light', 35, 35)
+			+sm
+				+f(null, 22)
+			em
+				+lg
+					display: inline-block
+					padding: 0 7px 2px
+					background: $yellow
+					+f('med')
+				+sm
+					padding: 3px 7px 2px
+		small
+			font-size: 100%
+			+lg
+				display: block
+				padding-bottom: 14px
+				text-transform: uppercase
+			+sm
+				padding-bottom: 0
+	&__decor
+		position: absolute
+		top: 0
+		right: 100%
+		height: 240px
+		+lg
+			top: auto
+			bottom: -19px
+			left: 0
+			right: auto
+			width: 211px
+			height: 24px
+			background: url(../img/decor.png)
+		+sm
+			left: 20px
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			right: 0
+			border-left: 5px solid $yellow
+			+lg
+				display: none
+		&:before
+			top: 0
+			height: 104px
+		&:after
+			top: 134px
+			bottom: 0
+		i
+			+lg
+				display: none
+			&:before,
+			&:after
+				content: ""
+				position: absolute
+				right: 0
+				border-left: 6px solid $yellow
+			&:before
+				top: 104px
+				height: 23px
+				transform: rotate(45deg)
+				transform-origin: top right
+			&:after
+				top: 107px
+				height: 27px
+				margin-right: 0px
+				transform: rotate(-45deg)
+				transform-origin: bottom right

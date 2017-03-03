@@ -22,6 +22,29 @@ body
 	+md
 		max-width: 500px
 
+.decor
+	position: relative
+	max-width: 190px
+	border-bottom: 5px solid $yellow
+	+lg
+		border-bottom-width: 10px
+		max-width: 211px
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate3d(-50%,0,0)
+	&:after
+		+arr(32,11,$black,b)
+		+lg
+			+arr(34,11,$black,b)
+	&:before
+		+arr(48,17,$yellow,b)
+		+lg
+			+arr(70,22,$yellow,b)
+
 //typography
 h1, h2, h3, h4, h5, h6, strong, b, cite, th, i, em
 	font-weight: normal
@@ -34,10 +57,10 @@ a
 .btn
 	display: inline-block
 	vertical-align: top
-	padding: 7px 20px 2px
+	padding: 15px 20px 11px
 	color: $white
 	background: $black
-	+f('mreg', 23, 40)
+	+f('mreg', 23, 23)
 	text-align: center
 	transition: background 0.25s linear
 	&:hover
@@ -50,10 +73,34 @@ a
 		padding: 19px 30px 13px
 		width: auto
 		+f(null, 24, 30)
+	span
+		+lg
+			display: block
+	em
+		display: none
+		+f('mbold')
+		+lg
+			display: inline-block
 	&_yellow
 		span
 			+lg
 				color: $yellow
-	span
+	&_white
+		color: $black
+		background: $white
 		+lg
-			display: block
+			background: $yellow
+		&:hover
+			color: $black
+			background: darken($white, 10%)
+			+lg
+				background: lighten($yellow, 10%)
+		em
+			display: inline-block
+		em, br
+			+lg
+				display: none
+		strong
+			+lg
+				display: block
+				+f('mbold')
