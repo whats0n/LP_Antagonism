@@ -1,8 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><defs>
         <style>
+            .cls-1{opacity:.3}.cls-2{font-size:434.07px;fill:#fff;font-family:PF DinText Pro;letter-spacing:-60px}
+        </style>
+    
+        <style>
+            .cls-1{opacity:.2}.cls-2{font-size:434.07px;fill:#fff;font-family:PF DinText Pro;letter-spacing:-26px}.cls-3{letter-spacing:-60px}
+        </style>
+    
+        <style>
+            .cls-1{opacity:.2}.cls-2{font-size:434.07px;fill:#fff;font-family:PF DinText Pro;letter-spacing:-26px}.cls-3{letter-spacing:-60px}
+        </style>
+    
+        <style>
             .cls-1{fill:#040605}
         </style>
-    </defs><symbol id="icon-facebook" viewBox="0 0 10 19">
+    </defs><symbol id="icon-01" viewBox="0 0 298.64 480.95">
+    
+    <title>
+        01
+    </title>
+    <g class="cls-1">
+        <text class="cls-2" transform="translate(0 368.09)">
+            01
+        </text>
+    </g>
+</symbol><symbol id="icon-02" viewBox="0 0 372.43 480.95">
+    
+    <title>
+        02
+    </title>
+    <g class="cls-1">
+        <text class="cls-2" transform="translate(0 368.09)">
+            0<tspan class="cls-3" x="184.04" y="0">2</tspan>
+        </text>
+    </g>
+</symbol><symbol id="icon-03" viewBox="0 0 374.16 480.95">
+    
+    <title>
+        02
+    </title>
+    <g class="cls-1">
+        <text class="cls-2" transform="translate(0 368.09)">
+            0<tspan class="cls-3" x="184.04" y="0">3</tspan>
+        </text>
+    </g>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>
