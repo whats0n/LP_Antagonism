@@ -938,13 +938,13 @@ a {
   margin: 0 auto;
   padding: 58px 66px 56px 104px;
   max-width: 980px;
-  overflow: hidden;
 }
 
 .exhibiting_yellow .exhibiting__wrap {
   padding-top: 72px;
   padding-bottom: 42px;
   color: #000;
+  overflow: hidden;
 }
 
 .exhibiting_yellow .exhibiting__wrap:before {
