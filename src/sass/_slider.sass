@@ -20,42 +20,59 @@
 		width: 40px
 		height: 40px
 		background-color: $yellow
-		background-repeat: no-repeat
-		background-size: auto 29px
 		+lg
 			top: 192px
 			width: 83px
 			height: 83px
-			background-size: auto 60px
 		+sm
 			top: 150px
 			width: 40px
 			height: 40px
-			background-size: auto 29px
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			width: 17px
+			height: 29px
+			background-repeat: no-repeat
+			transform: translate3d(0,-50%,0)
+			+lg
+				width: 36px
+				height: 60px
+			+sm
+				width: 17px
+				height: 29px
 	&__prev
 		left: -80px
-		background-image: url(../img/prev.svg)
-		background-position: 10px center
 		+r(1260)
 			left: -40px
 		+lg
 			left: -75px
-			background-position: 20px center
 		+sm
 			left: 0px
-			background-position: 10px center
+		&:before
+			left: 10px
+			background-image: url(../img/prev.svg)
+			+lg
+				left: 20px
+			+sm 
+				left: 10px
 	&__next
 		right: -80px
-		background-image: url(../img/next.svg)
 		background-position: 12px center
 		+r(1260)
 			right: -40px
 		+lg
 			right: -75px
-			background-position: 27px center
 		+sm
 			right: 0px
-			background-position: 12px center
+		&:before
+			right: 10px
+			background-image: url(../img/next.svg)
+			+lg
+				right: 20px
+			+sm 
+				right: 10px
 	&__dots
 		position: absolute
 		top: 574px

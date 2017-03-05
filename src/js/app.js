@@ -4,6 +4,9 @@ window.jQuery = jQuery;
 window.$ = jQuery;
 
 import slick from 'slick-carousel';
+import svg4everybody from 'svg4everybody';
+
+svg4everybody();
 
 $(document).ready(function() {
 	const slider = $('.js-slider');
