@@ -176,6 +176,12 @@ html {
   fill: initial;
 }
 
+.icon-quotes-end {
+  width: 1.1em;
+  height: 1em;
+  fill: initial;
+}
+
 .icon-quotes {
   width: 1.1em;
   height: 1em;
@@ -909,6 +915,7 @@ a {
 }
 
 .free__title strong {
+  color: #ebbf00;
   font-size: 71px;
   line-height: 0.95;
 }
@@ -1426,10 +1433,25 @@ a {
 
 .slide__title .icon {
   position: absolute;
+  font-size: 26px;
+  fill: #ebbf00;
+}
+
+.slide__title .icon-quotes {
   bottom: 100%;
   right: 100%;
   margin: 0 8px -3px 0;
-  font-size: 26px;
+}
+
+.slide__title .icon-quotes-end {
+  top: 100%;
+  right: 0;
+}
+
+.slide__title-in {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .slide__label {
@@ -2399,8 +2421,15 @@ a {
 
   .slide__title .icon {
     font-size: 82px;
+  }
+
+  .slide__title .icon-quotes {
     -webkit-transform: translate3d(110%, 40%, 0) rotate(180deg);
     transform: translate3d(110%, 40%, 0) rotate(180deg);
+  }
+
+  .slide .decor:after {
+    border-top-color: #181818;
   }
 
   .slide__title, .slide__title small {
@@ -2933,6 +2962,9 @@ a {
 
   .slide__title .icon {
     font-size: 26px;
+  }
+
+  .slide__title .icon-quotes {
     margin: 0;
   }
 

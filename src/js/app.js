@@ -1,5 +1,9 @@
-import slick from 'slick-carousel';
+import jQuery from 'jquery';
 
+window.jQuery = jQuery;
+window.$ = jQuery;
+
+import slick from 'slick-carousel';
 
 $(document).ready(function() {
 	const slider = $('.js-slider');

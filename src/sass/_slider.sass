@@ -162,18 +162,33 @@
 				background: #181818
 			+sm
 				+f(null, 18, 22)
-		.icon
+		.icon  
 			position: absolute
+			font-size: 26px
+			fill: $yellow
+			+lg
+				font-size: 82px
+			+sm
+				font-size: 26px
+		.icon-quotes
 			bottom: 100%
 			right: 100%
 			margin: 0 8px -3px 0
-			font-size: 26px
 			+lg
-				font-size: 82px
 				transform: translate3d(110%,40%,0) rotate(180deg)
 			+sm
-				font-size: 26px
 				margin: 0
+		.icon-quotes-end
+			top: 100%
+			right: 0
+	.decor
+		&:after
+			+lg
+				border-top-color: #181818
+	&__title-in
+		position: relative
+		display: inline-block
+		vertical-align: top
 	&__title, &__title small
 		+lg
 			+f(null, 31, 35)
